@@ -301,6 +301,45 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+
+local Section = Tab:AddSection({
+	Name = "ESP youtube video in readme"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Make ESP script",
+	Callback = function()
+        setclipboard("https://github.com/Slendyvn/Simple-Esp-/tree/main")
+        toclipboard("https://github.com/Slendyvn/Simple-Esp-/tree/main")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+Tab:AddButton({
+	Name = "ESP Tutorial",
+	Callback = function()
+        setclipboard("https://youtu.be/z0X2JeCI4qE?si=J0E1J50MFzPPFE2d")
+        toclipboard("https://youtu.be/z0X2JeCI4qE?si=J0E1J50MFzPPFE2d")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
 Tab:AddButton({
 	Name = "Discord server join if want",
 	Callback = function()
