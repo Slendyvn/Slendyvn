@@ -1,0 +1,232 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Notification",
+	Content = "NOT A DANDYS WORLD SCRIPT,ITS FOR MAKING SCRIPT",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddParagraph("IMPORTANT","ONLY for making script")
+
+local Section = Tab:AddSection({
+	Name = "Dont use this if ur a newbie"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Rspy mobile",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Basic admin command script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Infinite yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Mobile support"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Dark dex no key",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "To test if ur hub working on other executor"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Executor",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Video Tab",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddParagraph("IMPORTANT","pressing button will copy the link to the tut")
+
+Tab:AddButton({
+	Name = "Dark dex tut",
+	Callback = function()
+      		setclipboard("https://youtu.be/Z_RDc4nx9yo?si=CdM0-VkJ3OyaYjtE")
+        toclipboard("https://youtu.be/Z_RDc4nx9yo?si=CdM0-VkJ3OyaYjtE")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "RSpy TUT",
+	Callback = function()
+      		setclipboard("https://youtu.be/PLnwUmbyZmc?si=omy8Qh_xsFG-znJ4")
+        toclipboard("https://youtu.be/PLnwUmbyZmc?si=omy8Qh_xsFG-znJ4")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddLabel("Make your first HUB")
+
+Tab:AddButton({
+	Name = "Orion Lib Hub doc",
+	Callback = function()
+      		setclipboard("https://github.com/shlexware/Orion/blob/main/Documentation.md")
+        toclipboard("https://github.com/shlexware/Orion/blob/main/Documentation.md")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Orion HUB tut",
+	Callback = function()
+      		setclipboard("https://youtu.be/LlyyrgmY7dM?si=Zu6rMecUCWK7ojMg")
+        toclipboard("https://youtu.be/LlyyrgmY7dM?si=Zu6rMecUCWK7ojMg")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Turn ur script into loadstring"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Make your script shorter",
+	Callback = function()
+      		setclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
+        toclipboard("https://youtu.be/t7UoL80Wl0A?si=DSstf78Bw-CVEk_K")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Discord server join if want",
+	Callback = function()
+      		setclipboard("https://discord.gg/meMGN4W5")
+        toclipboard("https://discord.gg/meMGN4W5")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+
+OrionLib:Init()
