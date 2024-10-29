@@ -212,6 +212,28 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+
+local Section = Tab:AddSection({
+	Name = "Only use if you're advanced at making script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Advanced GUI maker",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastefy.app/EOgPqinS/raw'),true))() 
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
 	Icon = "rbxassetid://4483345998",
