@@ -84,8 +84,8 @@ UITextSizeConstraint.MaxTextSize = 30
 
 
 
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Orion')))()
 
 local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub"})
 
