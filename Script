@@ -32,13 +32,6 @@ Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
-local Sound = Instance.new("Sound")
-Sound.Parent = OrionLib
-Sound.Looped = true
-Sound.Playing = true
-Sound.Volume = 0.5
-Sound.SoundId = "rbxassetid://9043887091"
-
 
 OrionLib:MakeNotification({
 	Name = "Notification",
