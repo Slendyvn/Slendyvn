@@ -1,40 +1,18 @@
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 
---Properties:
+local ScreenGui1 = Instance.new("ScreenGui") 
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local ImageButton1 = Instance.new("ImageButton") 
+ScreenGui1.Parent = game.CoreGui
+ImageButton1.Parent = ScreenGui1
+ImageButton1.Position = UDim2.new(0,0.5,0)
+ImageButton1.Size = UDim2.new(0.10,0,0.2)
+ImageButton1.Image = "rbxassetid://139030956017637"
+ImageButton1.Draggable = true
+ImageButton1.Visible = true
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Frame.BackgroundTransparency = 1
-Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
-Frame.Size = UDim2.new(0.01, 0.01, 0.01, 0.01)
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(0, 94, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Size = UDim2.new(1, 0, 1, 0)
-TextButton.Font = Enum.Font.Arcade --you can change the font(SourceSans)
-TextButton.Text = "Slendy" --change the name of ur Hub here
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 50.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextStrokeTransparency = 0.000
-TextButton.TextWrapped = true
-TextButton.MouseButton1Down:Connect(function()
-    game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightShift" , false , game)
+ImageButton1.MouseButton1Click:Connect(function() 
+game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightShift" , false , game)
 end)
-
-UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 30
-
-TextButton.Draggable = true
-
 
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -53,6 +31,14 @@ IntroIcon = <string> - URL to the image you want to use in the intro animation.
 Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
+
+local Sound = Instance.new("Sound")
+Sound.Parent = OrionLib
+Sound.Looped = true
+Sound.Playing = true
+Sound.Volume = 0.5
+Sound.SoundId = "rbxassetid://9043887091"
+
 
 OrionLib:MakeNotification({
 	Name = "Notification",
@@ -237,6 +223,31 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddLabel("Make your first HUB")
+
+Tab:AddButton({
+	Name = "Mute Song",
+	Callback = function()
+      		local Sound = Instance.new("Sound")
+Sound.Parent = OrionLib
+Sound.Looped = true
+Sound.Playing = false
+Sound.Volume = 0.5
+Sound.SoundId = "rbxassetid://9043887091"
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Play Song",
+	Callback = function()
+      		local Sound = Instance.new("Sound")
+Sound.Parent = OrionLib
+Sound.Looped = true
+Sound.Playing = true
+Sound.Volume = 0.5
+Sound.SoundId = "rbxassetid://9043887091"
+  	end    
+})
+
 
 Tab:AddButton({
 	Name = "Orion Lib Hub doc",
