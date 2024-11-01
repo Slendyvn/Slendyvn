@@ -237,7 +237,7 @@ Tab:AddToggle({
 	Name = "Mute Song",
 	Default = false,
 	Callback = function(Value)
-		Sound.Playing = Value
+		Sound.Playing.Value = Value
 	end    
 })
 
