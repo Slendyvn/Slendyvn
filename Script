@@ -219,7 +219,7 @@ Tab:AddButton({
 	Name = "Play song",
 	Callback = function()
       		local Sound = Instance.new("Sound")
-Sound.Parent = OrionLib
+Sound.Parent = ImageButton1
 Sound.Looped = true
 Sound.Volume = 0.5
 Sound.Playing = true
