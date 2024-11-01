@@ -6,7 +6,7 @@ ScreenGui1.Parent = game.CoreGui
 ImageButton1.Parent = ScreenGui1
 ImageButton1.Position = UDim2.new(0,0.5,0)
 ImageButton1.Size = UDim2.new(0.10,0,0.2)
-ImageButton1.Image = "rbxassetid://139030956017637"
+ImageButton1.Image = "rbxassetid://14768275027"
 ImageButton1.Draggable = true
 ImageButton1.Visible = true
 
