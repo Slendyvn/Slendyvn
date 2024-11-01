@@ -215,16 +215,14 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddLabel("Make your first HUB")
-
       		local Sound = Instance.new("Sound")
 Sound.Parent = OrionLib
 Sound.Looped = true
 Sound.Volume = 0.5
 Sound.Playing = true
 Sound.SoundId = "rbxassetid://9043887091"
-  	end    
-})
+
+
 Tab:AddToggle({
 	Name = "Mute Song",
 	Default = false,
