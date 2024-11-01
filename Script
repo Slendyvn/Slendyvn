@@ -217,29 +217,27 @@ Callback = <function> - The function of the button.
 
 Tab:AddLabel("Make your first HUB")
 
-Tab:AddButton({
-	Name = "Mute Song",
-	Callback = function()
       		local Sound = Instance.new("Sound")
 Sound.Parent = OrionLib
 Sound.Looped = true
-Sound.Playing = false
 Sound.Volume = 0.5
+Sound.Playing = true
 Sound.SoundId = "rbxassetid://9043887091"
   	end    
+})
+Tab:AddToggle({
+	Name = "Mute Song",
+	Default = false,
+	Callback = function(Value)
+		Sound.Playing = Value
+	end    
 })
 
-Tab:AddButton({
-	Name = "Play Song",
-	Callback = function()
-      		local Sound = Instance.new("Sound")
-Sound.Parent = OrionLib
-Sound.Looped = true
-Sound.Playing = true
-Sound.Volume = 0.5
-Sound.SoundId = "rbxassetid://9043887091"
-  	end    
-})
+--[[
+Name = <string> - The name of the toggle.
+Default = <bool> - The default value of the toggle.
+Callback = <function> - The function of the toggle.
+]]
 
 
 Tab:AddButton({
