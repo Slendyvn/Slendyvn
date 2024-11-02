@@ -21,7 +21,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub"})
+local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://130025245087847 "})
 
 --[[
 Name = <string> - The name of the UI.
