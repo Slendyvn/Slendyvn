@@ -52,7 +52,7 @@ Time = <number> - The duration of the notfication.
 
 local Tab = Window:MakeTab({
 	Name = "Main",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7888350789",
 	PremiumOnly = false
 })
 
@@ -180,7 +180,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://15567850271",
 	PremiumOnly = false
 })
 
