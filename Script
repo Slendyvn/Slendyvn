@@ -39,7 +39,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 OrionLib:MakeNotification({
 	Name = "Notification",
 	Content = "NOT A DANDYS WORLD SCRIPT,ITS FOR MAKING SCRIPT",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://17890682704",
 	Time = 5
 })
 
