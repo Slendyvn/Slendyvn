@@ -6,7 +6,7 @@ ScreenGui1.Parent = game.CoreGui
 ImageButton1.Parent = ScreenGui1
 ImageButton1.Position = UDim2.new(0,0.5,0)
 ImageButton1.Size = UDim2.new(0.10,0,0.2)
-ImageButton1.Image = "rbxassetid://15399905005"
+ImageButton1.Image = "rbxassetid://123107022359108 "
 ImageButton1.Draggable = true
 ImageButton1.Visible = true
 
@@ -21,7 +21,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://130025245087847"})
+local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://15399905005 "})
 
 --[[
 Name = <string> - The name of the UI.
