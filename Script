@@ -21,7 +21,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Draggable')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://15399905005"})
+local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://17890682704"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -37,7 +37,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 local Tab = Window:MakeTab({
 	Name = "Main",
-	Icon = "rbxassetid://7888350789",
+	Icon = "rbxassetid://17890682704",
 	PremiumOnly = false
 })
 
