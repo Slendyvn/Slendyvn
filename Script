@@ -304,8 +304,16 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Song (Will add more)"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
 Tab:AddButton({
-	Name = "Play song",
+	Name = "Chill a",
 	Callback = function()
       		local Sound = Instance.new("Sound")
 Sound.Parent = ImageButton1
@@ -324,7 +332,7 @@ Callback = <function> - The function of the button.
 Tab:AddButton({
 	Name = "Mute Song",
 	Callback = function()
-      		Sound.Playing.Value = false
+      		Sound.Playing = false
   	end    
 })
 
