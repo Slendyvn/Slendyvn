@@ -21,7 +21,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "slendy hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://15399905005"})
+local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://15399905005"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -33,21 +33,6 @@ IntroText = <string> - Text to show in the intro animation.
 IntroIcon = <string> - URL to the image you want to use in the intro animation.
 Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
-]]
-
-
-OrionLib:MakeNotification({
-	Name = "Notification",
-	Content = "NOT A DANDYS WORLD SCRIPT,ITS FOR MAKING SCRIPT",
-	Image = "rbxassetid://17890682704",
-	Time = 5
-})
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
 ]]
 
 local Tab = Window:MakeTab({
@@ -218,37 +203,6 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-Tab:AddButton({
-	Name = "Play song",
-	Callback = function()
-      		local Sound = Instance.new("Sound")
-Sound.Parent = ImageButton1
-Sound.Looped = true
-Sound.Volume = 0.5
-Sound.Playing = true
-Sound.SoundId = "rbxassetid://9043887091"
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-
-Tab:AddToggle({
-	Name = "Mute Song",
-	Default = false,
-	Callback = function(Value)
-		Sound.Playing.Value = "Value"
-	end    
-})
-
---[[
-Name = <string> - The name of the toggle.
-Default = <bool> - The default value of the toggle.
-Callback = <function> - The function of the toggle.
-]]
 
 
 Tab:AddButton({
@@ -350,8 +304,34 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Play song",
+	Callback = function()
+      		local Sound = Instance.new("Sound")
+Sound.Parent = ImageButton1
+Sound.Looped = true
+Sound.Volume = 0.5
+Sound.Playing = true
+Sound.SoundId = "rbxassetid://9043887091"
+  	end    
+})
 
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
+Tab:AddButton({
+	Name = "Mute Song",
+	Callback = function()
+      		Sound.Playing.Value = false
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 
 OrionLib:Init()
