@@ -14,6 +14,9 @@ ImageButton1.MouseButton1Click:Connect(function()
 game:GetService("VirtualInputManager"):SendKeyEvent(true, "RightShift" , false , game)
 end)
 
+local UICorner1 = Instance.new("UICorner") 
+UICorner1.Parent = ImageButton1
+UICorner1.CornerRadius = UDim.new(0.1,0)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
