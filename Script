@@ -174,6 +174,9 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
+Tab:AddParagraph("⚠️Caution⚠️","all of the script that is not included supports pc")
+
+
 local Section = Tab:AddSection({
 	Name = "Dex V3"
 })
@@ -217,7 +220,6 @@ Callback = <function> - The function of the button.
 ]]
 
 
-Tab:AddLabel("Simple GUI and advanced can also use on pc")
 
 
 local Tab = Window:MakeTab({
@@ -234,6 +236,13 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 
 Tab:AddParagraph("IMPORTANT","pressing button will copy the link to the tut")
 
+local Section = Tab:AddSection({
+	Name = "Youtube videos"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 Tab:AddButton({
 	Name = "Dark dex tut",
 	Callback = function()
