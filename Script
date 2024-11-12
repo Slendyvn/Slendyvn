@@ -162,6 +162,63 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "FOR PC",
+	Icon = "rbxassetid://7888350789",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Dex V3"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Dark dex pc no key",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/Dex/refs/heads/main/Dex"))()
+
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Rspy for pc"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+
+Tab:AddButton({
+	Name = "Rpsy for pc",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Remotespy-for-solara-14630"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+Tab:AddLabel("Simple GUI and advanced can also use on pc")
+
 
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
