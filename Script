@@ -358,22 +358,8 @@ Callback = <function> - The function of the button.
 ]]
 
 
-
-Tab:AddButton({
-	Name = "Discord server join if want",
-	Callback = function()
-      		setclipboard("https://discord.gg/meMGN4W5")
-        toclipboard("https://discord.gg/meMGN4W5")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
 local Section = Tab:AddSection({
-	Name = "Song (Will add more)"
+	Name = "Song (only one for now)"
 })
 
 --[[
@@ -381,7 +367,7 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
-	Name = "Tut music for making video",
+	Name = "Tut music for making videos",
 	Callback = function()
       		local Sound = Instance.new("Sound")
 Sound.Parent = ImageButton1
@@ -398,9 +384,10 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Mute Song",
+	Name = "Discord server join if want",
 	Callback = function()
-      		Sound.Playing = false
+      		setclipboard("https://discord.gg/meMGN4W5")
+        toclipboard("https://discord.gg/meMGN4W5")
   	end    
 })
 
