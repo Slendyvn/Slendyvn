@@ -47,7 +47,9 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
-Tab:AddParagraph("IMPORTANT","ONLY for making script")
+Tab:AddParagraph("IMPORTANT📢","ONLY for making script")
+
+Tab:AddLabel("If you dont know how to use these check out Video tab📼")
 
 local Section = Tab:AddSection({
 	Name = "Dont use this if ur a newbie"
