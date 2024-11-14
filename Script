@@ -36,6 +36,26 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
 local Tab = Window:MakeTab({
+	Name = "ChangeLog",
+	Icon = "rbxassetid://11017609035",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+
+Tab:AddParagraph("🛠 HUB NOT WORKING?","if the hub ever crashed or not working its just a bug or i broken it silly me")
+Tab:AddLabel("Added Changelog tab (Yay)")
+Tab:AddLabel("Fix bugs")
+
+
+
+
+local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://17890682704",
 	PremiumOnly = false
