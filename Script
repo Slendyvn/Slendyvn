@@ -177,7 +177,6 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 Tab:AddParagraph("⚠️Caution⚠️","all of the script that is not included supports pc")
-CoolParagraph:Set("⚠️CAUTION⚠️", "All of the scripts that are not included SUPPORTS pc!")
 
 local Section = Tab:AddSection({
 	Name = "Dex V3"
