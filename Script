@@ -21,7 +21,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Draggable')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy Hub", IntroIcon = "rbxassetid://109175027199378"})
+local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy's Hub", IntroIcon = "rbxassetid://17890682704"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -175,6 +175,8 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
+
+Tab:AddLabel("📢 Scripts that are NOT included supports PC")
 
 local Section = Tab:AddSection({
 	Name = "Dex V3"
