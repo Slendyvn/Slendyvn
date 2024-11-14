@@ -51,7 +51,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 Tab:AddParagraph("🛠 HUB NOT WORKING?","if the hub ever crashed or not working its just a bug or i broken it silly me")
 Tab:AddLabel("Added Changelog tab (Yay)")
 Tab:AddLabel("Fix bugs")
-
+Tab:AddLabel("Added Cframe & Teleport script")
 
 
 
@@ -183,6 +183,27 @@ Tab:AddButton({
       		loadstring(game:HttpGet('https://pastefy.app/S7xNJSXX/raw'))()execute("Script8")
   	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "Make Teleports script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Teleport script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Script/main/Position_Gui.lua", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 
 local Tab = Window:MakeTab({
 	Name = "FOR PC",
