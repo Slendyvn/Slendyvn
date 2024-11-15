@@ -6,7 +6,7 @@ ScreenGui1.Parent = game.CoreGui
 ImageButton1.Parent = ScreenGui1
 ImageButton1.Position = UDim2.new(0,0.5,0)
 ImageButton1.Size = UDim2.new(0.10,0,0.2)
-ImageButton1.Image = "rbxassetid://128109085171590"
+ImageButton1.Image = "rbxassetid://105521450035944"
 ImageButton1.Draggable = true
 ImageButton1.Visible = true
 
@@ -47,8 +47,22 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "15/6/24"
+})
 
-Tab:AddParagraph("🛠 HUB NOT WORKING?","if the hub ever crashed or not working its just a bug or i broken it silly me")
+--[[
+Name = <string> - The name of the section.
+]]
+Tab:AddLabel("Merry Christmas! 🎅(yes i know im too early)")
+
+local Section = Tab:AddSection({
+	Name = "14/6/24"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
 Tab:AddLabel("Added Changelog tab (Yay)")
 Tab:AddLabel("Fix bugs")
 Tab:AddLabel("Added Cframe & Teleport script")
