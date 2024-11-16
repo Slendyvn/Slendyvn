@@ -55,7 +55,7 @@ local Section = Tab:AddSection({
 --[[
 Name = <string> - The name of the section.
 ]]
-
+Tab:AddLabel("Add github song")
 Tab:AddLabel("Helpful Tab added")
 Tab:AddLabel("Removed song button until revamp")
 
