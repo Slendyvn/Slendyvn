@@ -47,6 +47,17 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
+
+local Section = Tab:AddSection({
+	Name = "16/11/24"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddLabel("Helpful Tab added")
+
 local Section = Tab:AddSection({
 	Name = "15/6/24"
 })
@@ -277,7 +288,7 @@ Callback = <function> - The function of the button.
 
 local Tab = Window:MakeTab({
 	Name = "Helpful stuff",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://123107022359108",
 	PremiumOnly = false
 })
 
