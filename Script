@@ -344,6 +344,21 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddParagraph("Example 🤑","something like this : https://github.com/Dan41/Scripts/raw/refs/heads/main/Jake%20Daniels%20-%20Two%20Face%20(Omido%20Remix).mp3")
+
+Tab:AddButton({
+	Name = "Play song with Github link",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Dan41/Scripts/refs/heads/main/GITHUB%20AUDIO%20PLAYER.lua'),true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
 	Icon = "rbxassetid://15567850271",
