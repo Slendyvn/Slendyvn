@@ -229,6 +229,26 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+local Section = Tab:AddSection({
+	Name = "Helps check script or workspace"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Overall script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/Overall/refs/heads/main/Overall"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 
 local Tab = Window:MakeTab({
 	Name = "FOR PC",
