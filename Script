@@ -57,6 +57,7 @@ Name = <string> - The name of the section.
 ]]
 
 Tab:AddLabel("Helpful Tab added")
+Tab:AddLabel("Removed song button until revamp")
 
 local Section = Tab:AddSection({
 	Name = "15/6/24"
@@ -479,6 +480,14 @@ Tab:AddButton({
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Small credit"
+})
+
+--[[
+Name = <string> - The name of the section.
 ]]
 
 Tab:AddButton({
