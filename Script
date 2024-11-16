@@ -483,40 +483,6 @@ Callback = <function> - The function of the button.
 ]]
 
 
-local Section = Tab:AddSection({
-	Name = "Song"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-
-Tab:AddTextbox({
-	Name = "Song",
-	Default = "",
-	TextDisappear = false,
-	Callback = function(Value)
-		      		local Sound = Instance.new("Sound")
-Sound.Parent = ImageButton1
-Sound.Looped = true
-Sound.Volume = 0.5
-Sound.Playing = true
-Sound.SoundId = "rbxassetid:// Value"
-  	end    
-
-	end	  
-})
-
---[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
-]]
-
-
-
 Tab:AddButton({
 	Name = "Discord server join if want",
 	Callback = function()
