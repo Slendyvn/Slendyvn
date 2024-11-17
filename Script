@@ -434,7 +434,7 @@ Callback = <function> - The function of the button.
 
 local Tab = Window:MakeTab({
 	Name = "Useless stuff",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://16376923107",
 	PremiumOnly = false
 })
 
