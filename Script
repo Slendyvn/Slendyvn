@@ -57,7 +57,8 @@ Name = <string> - The name of the section.
 Tab:AddLabel("New tab added")
 Tab:AddLabel("Tp tool added")
 Tab:AddLabel("On/off noclip added")
-
+Tab:AddLabel("DAB!!11!1")
+Tab:AddLabel("more i dont remember")
 local Section = Tab:AddSection({
 	Name = "16/11/24"
 })
