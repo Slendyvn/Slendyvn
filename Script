@@ -536,6 +536,24 @@ Callback = <function> - The function of the button.
 ]]
 
 
+Tab:AddButton({
+	Name = "Dab",
+	Callback = function()
+AnimationId = "248263260"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
 	Icon = "rbxassetid://15567850271",
