@@ -80,7 +80,6 @@ Tab:AddLabel("Fix bugs")
 Tab:AddLabel("Added Cframe & Teleport script")
 
 
-
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://17890682704",
