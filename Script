@@ -46,8 +46,21 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
+Tab:AddParagraph("Bug?","Sometime u cant execute this script cuz im updating it")
+local Section = Tab:AddSection({
+	Name = "17/11/24"
+})
 
-
+--[[
+Name = <string> - The name of the section.
+]]
+Tab:AddLabel("Added Dab")
+Tab:AddLabel("new tab "useless stuff"")
+Tab:AddLabel("Silly fly added")
+Tab:AddLabel("Tptool added")
+Tab:AddLabel("Added On/off noclip")
+Tab:AddLabel("Added On/off infjump")
+Tab:AddLabel("More stuff i just dont remember")
 local Section = Tab:AddSection({
 	Name = "16/11/24"
 })
@@ -364,6 +377,129 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
+Tab:AddButton({
+	Name = "Tptool",
+	Callback = function()
+      		local Tele = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+Tele.RequiresHandle = false
+Tele.RobloxLocked = true
+Tele.Name = "Tptool"
+Tele.ToolTip = "Slendy"
+Tele.Equipped:connect(function(Mouse)
+	Mouse.Button1Down:connect(function()
+		if Mouse.Target then
+			game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name).HumanoidRootPart.CFrame = (CFrame.new(Mouse.Hit.x, Mouse.Hit.y + 5, Mouse.Hit.z))
+		end
+	end)
+end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "On/off nolip",
+	Callback = function()
+      		_G.noclip = not _G.noclip
+print(_G.noclip)
+
+if not game:GetService('Players').LocalPlayer.Character:FindFirstChild("LowerTorso") then
+	while _G.noclip do
+		game:GetService("RunService").Stepped:wait()
+		game.Players.LocalPlayer.Character.Head.CanCollide = false
+		game.Players.LocalPlayer.Character.Torso.CanCollide = false
+	end
+else
+	if _G.InitNC ~= true then     
+		_G.NCFunc = function(part)      
+			local pos = game:GetService('Players').LocalPlayer.Character.LowerTorso.Position.Y  
+			if _G.noclip then             
+				if part.Position.Y > pos then                 
+					part.CanCollide = false             
+				end        
+			end    
+		end      
+		_G.InitNC = true 
+	end 
+	 
+	game:GetService('Players').LocalPlayer.Character.Humanoid.Touched:connect(_G.NCFunc) 
+end
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "On/Off infjump",
+	Callback = function()
+      		_G.infinjump = not _G.infinjump
+
+local plr = game:GetService'Players'.LocalPlayer
+local m = plr:GetMouse()
+m.KeyDown:connect(function(k)
+	if _G.infinjump then
+		if k:byte() == 32 then
+		plrh = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'
+		plrh:ChangeState('Jumping')
+		wait()
+		plrh:ChangeState('Seated')
+		end
+	end
+end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Useless tab ",
+	Icon = "rbxassetid://15399905005",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+	Name = "Dab",
+	Callback = function()
+      		AnimationId = "248263260"
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://"..AnimationId
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Fly but silly",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/silly-fly/refs/heads/main/silly"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
 
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
