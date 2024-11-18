@@ -48,6 +48,19 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
+	Name = "18/11/24"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddLabel("Sorry no update today,working on a big update")
+
+
+
+
+local Section = Tab:AddSection({
 	Name = "17/11/24"
 })
 
