@@ -48,6 +48,17 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
 local Section = Tab:AddSection({
+	Name = "21/11/24"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddLabel("Still working on the update so heres a small update")
+Tab:AddLabel("Display name remover added on Helpful tab")
+
+local Section = Tab:AddSection({
 	Name = "18/11/24"
 })
 
@@ -445,6 +456,44 @@ end
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+Tab:AddButton({
+	Name = "Display name remover",
+	Callback = function()
+      		local Players = game:FindService("Players")
+
+require(game:GetService("Chat"):WaitForChild("ClientChatModules").ChatSettings).PlayerDisplayNamesEnabled = false
+
+local function rename(character,name)
+    repeat task.wait() until character:FindFirstChildWhichIsA("Humanoid")
+    character:FindFirstChildWhichIsA("Humanoid").DisplayName = name
+end
+
+for i,v in next, Players:GetPlayers() do
+    if v.Character then
+        v.DisplayName = v.Name
+        rename(v.Character,v.Name)
+    end
+    v.CharacterAdded:Connect(function(char)
+        rename(char,v.Name)
+    end)
+end
+
+Players.PlayerAdded:Connect(function(plr)
+    plr.DisplayName = plr.Name
+    plr.CharacterAdded:Connect(function(char)
+        rename(char,plr.Name)
+    end)
+end)
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
 
 local Tab = Window:MakeTab({
 	Name = "Useless stuff",
