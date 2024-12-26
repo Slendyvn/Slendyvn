@@ -6,7 +6,7 @@ ScreenGui1.Parent = game.CoreGui
 ImageButton1.Parent = ScreenGui1
 ImageButton1.Position = UDim2.new(0,0.5,0)
 ImageButton1.Size = UDim2.new(0.10,0,0.2)
-ImageButton1.Image = "rbxassetid://105521450035944"
+ImageButton1.Image = "rbxassetid://109175027199378"
 ImageButton1.Draggable = true
 ImageButton1.Visible = true
 
@@ -46,6 +46,10 @@ Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
+
+local Section = Tab:AddSection({
+	Name = "27/12/2024"
+Tab:AddLabel("Happy new year! thank you so much for 1.8k view in this year! :) ")
 
 local Section = Tab:AddSection({
 	Name = "21/11/24"
@@ -617,6 +621,11 @@ Callback = <function> - The function of the button.
 ]]
 
 
+
+
+
+
+
 local Tab = Window:MakeTab({
 	Name = "Video Tab",
 	Icon = "rbxassetid://15567850271",
@@ -775,6 +784,52 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+local Tab = Window:MakeTab({
+	Name = "TESTING FEATURE",
+	Icon = "rbxassetid://75019912020190",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddButton({
+	Name = "Create sound in workspace",
+	Callback = function()
+      		local audio = Instance.new("Sound")
+audio.Parent = game.Workspace
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+idBox:AddTextbox({
+	Name = "Song ID",
+	Default = "Song id",
+	TextDisappear = true,
+	Callback = function(Value)
+		local id = tonumber("idBox.Text")
+if id then
+audio.SoundId = "rbxassetid://"..id
+audio:Play()
+end
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+
 
 
 OrionLib:Init()
