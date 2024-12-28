@@ -1,7 +1,3 @@
-print("Slendys Script by SLENDY! @slendyvn on Discord! XD")
-while wait(120) do
-print("Slendys Script by SLENDY! @slendyvn on Discord! XD")
-end
 local ScreenGui1 = Instance.new("ScreenGui") 
 
 local ImageButton1 = Instance.new("ImageButton") 
@@ -23,7 +19,7 @@ UICorner1.CornerRadius = UDim.new(0.1,0)
 print("Script Executed! credit slendy")  
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Draggable')))()
 
-
+print("Slendys Script by SLENDY! @slendyvn on Discord! XD")
 local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy's Hub", IntroIcon = "rbxassetid://17890682704"})
 
 --[[
