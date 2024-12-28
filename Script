@@ -16,7 +16,7 @@ end)
 local UICorner1 = Instance.new("UICorner") 
 UICorner1.Parent = ImageButton1
 UICorner1.CornerRadius = UDim.new(0.1,0)
-
+print("Script Executed! credit slendy")  
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Draggable')))()
 
 
@@ -140,8 +140,8 @@ Name = <string> - The name of the section.
 
 Tab:AddButton({
 	Name = "Rspy mobile",
-	Callback = function()
-      		--[[
+	Callback = function()	
+--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
@@ -164,7 +164,8 @@ Name = <string> - The name of the section.
 Tab:AddButton({
 	Name = "Infinite yield",
 	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
 
@@ -275,6 +276,29 @@ Tab:AddButton({
 	Name = "Overall script",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/Slendyvn/Overall/refs/heads/main/Overall"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Loadstring converter"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Loadstring converter",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://pastebin.com/raw/tsYdcZPJ"))()
   	end    
 })
 
