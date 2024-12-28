@@ -18,7 +18,7 @@ local UICorner1 = Instance.new("UICorner")
 UICorner1.Parent = ImageButton1
 UICorner1.CornerRadius = UDim.new(0.1,0)
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Slendyvn/Draggable/refs/heads/main/Draggable')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
 local Window = OrionLib:MakeWindow({Name = "Slendy's Script👅", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "Slendy's Hub", IntroIcon = "rbxassetid://17890682704"})
