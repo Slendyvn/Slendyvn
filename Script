@@ -1,3 +1,7 @@
+print("Slendys Script by SLENDY! @slendyvn on Discord! XD")
+while wait(120) do
+print("Slendys Script by SLENDY! @slendyvn on Discord! XD")
+end
 local ScreenGui1 = Instance.new("ScreenGui") 
 
 local ImageButton1 = Instance.new("ImageButton") 
